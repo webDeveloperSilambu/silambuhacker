@@ -1,0 +1,125 @@
+:root{
+    --bg-color-:#000000;
+    --text-color-:#d6d6d7;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: #219ebc;
+    border-radius: 5px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.hover-content{
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.4),#219ebc);
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-content a{
+    color: orange;
+    font-size: 1.2rem;
+}
+
+
+
+
+@media(max-width:800px){
+    html{
+        font-size: 90%;
+    }
+    header .head-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    header .head-content a{
+        margin: 8px;
+    }
+    /*------------Container---------------*/
+    .container{
+        padding: 50px 10px;
+    }
+    /*---------Home-----------------*/
+     #home{
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #home .hero-data{
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .hero-image{
+       border: none;
+    }
+    #home .hero-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*---------------Doing----------------*/
+    #doing ul li h1{
+        font-size: 1.5rem;
+        width: 0px;
+    }
+
+    #doing ul li{
+        display: block;
+        width: 100%;
+    }
+
+    #doing ul li span{
+        margin: 0px;
+    }
+
+    #doing ul li p{
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+    /*---------Works----------*/
+    #work .work-list ul li{
+        width: 100%;
+        height: 100%;
+    }
+    /*---------Blog------------*/
+   #blog ul li{
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+    /*---------Contact-----------*/
+    #contact .find-Me .finds{
+        display: block;
+    }
+
+    #contact .find-Me .finds ul{
+        margin: 0px;
+        padding: 10px;
+    }
+}

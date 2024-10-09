@@ -1,0 +1,387 @@
+#progress-btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index:1001;
+}
+
+#progress-btn a{
+    color: yellow;
+    font-size: 2rem;
+}
+
+body{
+    color: var(--text-color-);
+    background-image: linear-gradient(90deg,black,#10002b);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*----------------Header Container-------------*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 0px;
+    background-image:linear-gradient(75deg,#000, #10002b);
+}
+
+header .head-content a{
+    margin: 0px 20px;
+}
+
+header .head-content a button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--text-color-);
+    font-weight: 500;
+    position: relative;
+}
+
+header .head-content a button::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-bottom: 2px solid yellow;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.6s;
+}
+
+header .head-content a button:hover::after{
+    width: 100%;
+}
+
+/*-----------------Home Container------------------*/
+
+#home{
+
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#home .hero-data{
+    width: 100%;
+    padding: 20px;
+}
+
+#home .hero-data p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+#home .hero-data h1{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 3rem;
+    margin: 10px 0px;
+}
+#home .hero-data h1 #ani-txt{
+    color: #B53471;
+    font-size: 4rem;
+}
+
+#home .hero-data h1 span{
+    text-transform: uppercase;
+    color:#219ebc;
+}
+
+
+
+
+#home .hero-data button{
+    cursor: pointer;
+    border: 2px solid #219ebc;
+    padding: 6px 10px;
+    font-weight: 500;
+}
+
+#home .hero-data button:hover{
+    background-color: #219ebc;
+    border: none;
+}
+
+#home .hero-data button a{
+    font-size: 1rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+#home .hero-image{
+    text-align: center;
+    padding: 20px;
+}
+
+
+#home .hero-image img{
+    width:450px;
+}
+
+.container{
+    text-align: center;
+    padding: 5% 30px;
+}
+
+.container h1{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+    text-transform: capitalize;
+    color: yellowgreen;
+}
+
+.container ul{
+    margin: 1rem 0rem;
+}
+
+.container ul img{
+    width: 100px;
+}
+
+li{
+    list-style: none;
+}
+/*--------------------About Container-----------------*/
+#about{
+    margin: 1rem 0rem;
+}
+
+#about p{
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 2px;
+}
+
+#about span{
+    color:#219ebc;
+    font-size: 1.2rem;
+    font-weight: 450;
+    text-transform: capitalize;
+}
+/*---------------------What i am Doing----------------*/
+#doing ul{
+    width: 100%;
+}
+
+#doing ul li h1{
+    font-size: 2.5rem;
+    color: #B53471;
+    text-transform: capitalize;
+}
+
+#doing ul li{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 20px 0px;
+}
+
+#doing ul li h1 span{
+    margin: 0px 20px;
+}
+
+#doing ul li h1{
+    width: 600px;
+}
+
+#doing p{
+    font-size: 1.2rem;
+}
+
+#doing ul li:hover{
+    background-color: #14213d;
+}
+
+/*-----------------Work Container----------------*/
+#work h1{
+    margin: 2rem 0rem;
+}
+#work .work-list ul li{
+    display: inline-block;
+    text-align: center;
+    width: 600px;
+    height: 350px;
+    margin: 3px;
+    padding: 10px;
+    transition: 0.5s;
+    border: 1px solid gray;
+    position: relative;
+}
+
+#work .work-list ul li:hover .hover-content{
+    height: 100%;
+    transition: 0.5s;
+}
+
+
+#work .work-list ul li img{
+    width: 100%;
+    height: 100%;display: block;
+}
+
+
+
+/*------------------Skill Container--------------*/
+#skill .skill-types{
+    text-align: left;
+    padding: 10px 20px;
+}
+
+#skill .skill-types h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(2, 143, 108);
+    font-weight: 500;
+}
+
+#skill ul{
+    margin: 10px 0px;
+}
+#skill ul li{
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    margin:10px;
+    text-align: center;
+}
+
+#skill ul li img{
+    background-color: #1e272e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+#skill ul li img:hover{
+    border: 3px solid blue;
+    padding: 5px;
+}
+
+/*---------------------------Blogs------------*/
+
+#blog .blog-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#blog ul li:hover{
+    padding: 2px;
+}
+
+#blog ul li{
+    display: inline-block;
+    margin: 2px 0px;
+    width: 600px;
+    height: 350px;
+    border: 1px solid gray;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+/*-------------Contact Container----------------------*/
+#contact .find-Me{
+    text-align: left;
+}
+
+#contact .find-Me h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0px;
+    color: rgb(2, 143, 108);
+}
+
+
+#contact .find-Me .finds{
+    width: 100%;
+    display: flex;
+}
+
+#contact .find-Me .finds ul{
+    width: 100%;
+    padding: 10px;
+}
+
+#contact .find-Me .finds ul li{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+#contact .find-Me .finds ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+#contact .find-Me .finds ul li a i{
+    width: 50px;
+    font-size: 1.8rem;
+    color: orange;
+}
+
+#contact .find-Me .finds li a span{
+    color: #B53471;
+    font-size: 1.4rem;
+}
+
+/*---------------preloader----------------------*/
+
+#preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+#preloader img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#homeBtn.active{
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
