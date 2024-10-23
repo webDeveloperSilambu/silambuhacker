@@ -89,15 +89,30 @@ const backSkill = document.querySelector(".backSkill");
 const dbSkill = document.querySelector(".dbSkill");
 
 const workContainer = [
-    "./assets/work/1.png","./assets/work/2.png","./assets/work/3.png","./assets/work/4.png"
+    {
+        "imgLink" : "./assets/work/1.png",
+        "WebLink" " "https://silambu-coffee-shop.netlify.app/"
+    },
+    {
+        "imgLink" : "./assets/work/2.png",
+        "WebLink" " "https://silambu-portpolio.netlify.app/"
+    },
+    {
+        "imgLink" : "./assets/work/3.png",
+        "WebLink" " "https://hacker-spicy-ecommerce.netlify.app/"
+    },
+    {
+        "imgLink" : "./assets/work/4.png",
+        "WebLink" " "https://youtube-silambu.netlify.app/"
+    }
 ]
 
 for (let i = 0; i < workContainer.length; i++){
     worksList.innerHTML += `
     <li class="content">
-    <img loading="lazy" src="${workContainer[i]}" alt="" srcset="">
+    <img loading="lazy" src="${workContainer[i].imgLink}" alt="" srcset="">
         <div class="hover-content">
-            <a href="/">visit on netlify</a>
+            <a href="${{workContainer[i].webLink}">${workContainer[i].webLink</a>
         </div>
     </li>
     `
