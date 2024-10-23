@@ -112,7 +112,7 @@ for (let i = 0; i < workContainer.length; i++){
     <li class="content">
     <img loading="lazy" src="${workContainer[i].imgLink}" alt="" srcset="">
         <div class="hover-content">
-            <a href="${{workContainer[i].webLink}">${workContainer[i].webLink</a>
+            <a href="${workContainer[i].webLink}">${workContainer[i].webLink}</a>
         </div>
     </li>
     `
