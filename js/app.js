@@ -95,15 +95,15 @@ const workContainer = [
     },
     {
         "imgLink" : "./assets/work/2.png",
-        "WebLink" " "https://silambu-portpolio.netlify.app/"
+        "WebLink" : "https://silambu-portpolio.netlify.app/"
     },
     {
         "imgLink" : "./assets/work/3.png",
-        "WebLink" " "https://hacker-spicy-ecommerce.netlify.app/"
+        "WebLink" : "https://hacker-spicy-ecommerce.netlify.app/"
     },
     {
         "imgLink" : "./assets/work/4.png",
-        "WebLink" " "https://youtube-silambu.netlify.app/"
+        "WebLink" : "https://youtube-silambu.netlify.app/"
     }
 ]
 
