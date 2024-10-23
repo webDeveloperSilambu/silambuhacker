@@ -91,7 +91,7 @@ const dbSkill = document.querySelector(".dbSkill");
 const workContainer = [
     {
         "imgLink" : "./assets/work/1.png",
-        "WebLink" " "https://silambu-coffee-shop.netlify.app/"
+        "WebLink" : "https://silambu-coffee-shop.netlify.app/"
     },
     {
         "imgLink" : "./assets/work/2.png",
